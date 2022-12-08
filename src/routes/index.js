@@ -11,7 +11,7 @@ const error = require("../middlewares/error");
 router.use("/auth", authRouter);
 
 router.use("/user", isLoggined, userRouter);
-router.use("/product", isLoggined, productRouter);
+router.use("/product", productRouter);
 router.use("/comment", isLoggined, commentRouter);
 router.use("/admin", isLoggined, isAdmin, adminRouter);
 router.use(error);

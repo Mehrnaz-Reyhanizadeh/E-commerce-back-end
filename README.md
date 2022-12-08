@@ -1,5 +1,6 @@
 # E-commerce-back-end
-E-commerce back-end project
+
+E-commerce back-end project using express.js and mongodb
 This project includes the following:
 register api
 login api (using json web token)
