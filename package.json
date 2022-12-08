@@ -1,0 +1,28 @@
+{
+  "name": "shopping-project",
+  "version": "1.0.0",
+  "description": "dashboard and product api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=app:main && nodemon index"
+  },
+  "author": "mehrnaz reyhanizadeh",
+  "license": "ISC",
+  "dependencies": {
+    "auto-bind": "^4.0.0",
+    "bcrypt": "^5.1.0",
+    "config": "^3.3.8",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mkdirp": "^1.0.4",
+    "mongoose": "^6.7.5",
+    "mongoose-timestamp": "^0.6.0",
+    "multer": "^1.4.5-lts.1",
+    "winston": "^3.8.2"
+  }
+}
