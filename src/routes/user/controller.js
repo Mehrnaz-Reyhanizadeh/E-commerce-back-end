@@ -9,6 +9,9 @@ module.exports = new (class extends controller {
     res.send("user dashboard");
   }
   async getMe(req, res) {
+    const token = req.header("x-auth-token");
+    const decoded = jwt.verify(token, config.get("jwt_key"));
+    const user = await this.User.findById(decoded._id);
     this.response({
       res,
       data: _.pick(user, ["fname", "lname", "address", "phoneNumber", "email"]),
