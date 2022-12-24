@@ -1,4 +1,4 @@
-# E-commerce-back-end
+# E-commerce-back-end (test project)
 
 E-commerce back-end project using express.js and mongodb
 This project includes the following:
